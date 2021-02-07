@@ -1,0 +1,1598 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Chronicle Text G1 Roman";
+  src: url("../font/Chronicle Text G1 Roman.otf");
+}
+
+@font-face {
+  font-family: "Verlag-Book";
+  src: url("../font/Verlag-Book.otf");
+}
+
+html, body {
+  line-height: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+a {
+  font-family: "Chronicle Text G1 Roman";
+}
+
+.inner {
+  width: 92.5%;
+  margin: 0 auto;
+}
+
+.gbtn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #404040;
+  padding: 12px 24px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #404040;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.gbtn:hover {
+  color: #ffffff;
+  background-color: #404040;
+}
+
+#wrap {
+  position: relative;
+}
+
+#wrap #m_menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #858687;
+  z-index: 1000;
+}
+
+#wrap #m_menu .inner {
+  width: 92.5%;
+  margin: 0 auto;
+}
+
+#wrap #m_menu .inner .m_close_btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70px;
+}
+
+#wrap #m_menu .inner .m_close_btn img {
+  width: 15px;
+  height: 15px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+#wrap #m_menu .inner .menu_list {
+  margin-bottom: 100px;
+}
+
+#wrap #m_menu .inner .menu_list .list_item a {
+  font-size: 30px;
+  color: #f5f5f5;
+  letter-spacing: 3px;
+  line-height: 1.9;
+  padding-bottom: 5px;
+  transition: 0.5s;
+  border-bottom: 1px solid #858687;
+}
+
+#wrap #m_menu .inner .menu_list .list_item a:hover {
+  color: #c7c8c9;
+  border-bottom: 1px solid #c7c8c9;
+}
+
+#wrap #m_menu .inner .m_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrap #m_menu .inner .m_footer .cp_info {
+  width: 25%;
+  font-family: "Chronicle Text G1 Roman";
+}
+
+#wrap #m_menu .inner .m_footer .cp_info p {
+  font-size: 12px;
+  color: #c7c8c9;
+}
+
+#wrap #m_menu .inner .m_footer .cp_info .m_footer_logo {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 50px;
+  background-image: url("../img/logoWhite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 20px;
+}
+
+#wrap #m_menu .inner .m_footer .cp_info .m_footer_logo:before {
+  content: 'ⓒ';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #f5f5f5;
+}
+
+#wrap #m_menu .inner .m_footer .site_map {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+#wrap #m_menu .inner .m_footer .site_map .category_title {
+  width: 150px;
+  font-size: 12px;
+  font-family: "Verlag-Book";
+  color: #c7c8c9;
+  letter-spacing: 3px;
+}
+
+#wrap #m_menu .inner .m_footer .site_map .category_title .site_category {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#wrap #m_menu .inner .m_footer .site_map .category_title .site_category .site_list {
+  width: 100%;
+}
+
+#wrap #m_menu .inner .m_footer .site_map .category_title .site_category .site_list a {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.5;
+  transition: 0.5s;
+  letter-spacing: 0;
+}
+
+#wrap #m_menu .inner .m_footer .site_map .category_title .site_category .site_list a:hover {
+  color: #c7c8c9;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu {
+  display: flex;
+  flex-direction: column;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu h3 {
+  font-size: 12px;
+  font-family: "Verlag-Book";
+  font-weight: 400;
+  color: #c7c8c9;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu form {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu form input {
+  display: block;
+  width: 170px;
+  height: 30px;
+  color: #ffffff;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #c7c8c9;
+  border-right: 0;
+  box-sizing: border-box;
+  border-radius: 0;
+  padding: 0 10px;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu form input::placeholder {
+  font-size: 13px;
+  font-family: 'Chronicle Text G1 Roman';
+  color: #c7c8c9;
+  letter-spacing: 3px;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu form button {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #c7c8c9;
+  background-image: url("../img/arrowRight.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item {
+  display: flex;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li {
+  margin-right: 20px;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  transition: 0.5s;
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a.instagram {
+  background-image: url("../img/instagram_gray.png");
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a.instagram:hover {
+  background-image: url("../img/instagram_white.png");
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a.twitter {
+  background-image: url("../img/twitter_gray.png");
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a.twitter:hover {
+  background-image: url("../img/twitter_white.png");
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a.facebook {
+  background-image: url("../img/facebook_gray.png");
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a.facebook:hover {
+  background-image: url("../img/facebook_white.png");
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a.pinterest {
+  background-image: url("../img/pinterest_gray.png");
+}
+
+#wrap #m_menu .inner .m_footer .social_menu ul.sns_item li a.pinterest:hover {
+  background-image: url("../img/pinterest_white.png");
+}
+
+#wrap #header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #f4f4f4;
+  z-index: 50;
+}
+
+#wrap #header #gnb {
+  position: relative;
+  width: 100%;
+}
+
+#wrap #header #gnb .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#wrap #header #gnb .inner .top_logo {
+  width: 114px;
+  display: flex;
+  align-items: center;
+}
+
+#wrap #header #gnb .inner .top_logo a {
+  display: block;
+  width: 100%;
+}
+
+#wrap #header #gnb .inner .top_logo a img {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+#wrap #header #gnb .inner .page_title {
+  width: 42%;
+  display: flex;
+  justify-content: center;
+}
+
+#wrap #header #gnb .inner .page_title .search_header {
+  display: none;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 5px 0;
+  border-bottom: 1px solid gray;
+}
+
+#wrap #header #gnb .inner .page_title .search_header::placeholder {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Chronicle Text G1 Roman';
+  color: #999999;
+}
+
+#wrap #header #gnb .inner .gnb_menu {
+  width: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#wrap #header #gnb .inner .gnb_menu li {
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin: 15px 0 15px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+#wrap #header #gnb .inner .gnb_menu li img {
+  display: block;
+  width: 100%;
+}
+
+#wrap #header #gnb .inner .gnb_menu li.account {
+  background-image: url("../img/user.png");
+  margin-left: 0;
+}
+
+#wrap #header #gnb .inner .gnb_menu li.search {
+  transition: 0.5s;
+  background-image: url("../img/search.png");
+}
+
+#wrap #header #gnb .inner .gnb_menu li.search.active {
+  background-image: url("../img/cancel.png");
+}
+
+#wrap #header #gnb .inner .gnb_menu li.menu_btn {
+  background-image: url("../img/menu.png");
+}
+
+#wrap #header #gnb .m_search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 40px;
+  background-color: #f4f4f4;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#wrap #header #gnb .m_search_bar .m_search_header {
+  display: block;
+  width: 60%;
+  height: 50%;
+  font-size: 14px;
+  outline: none;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid gray;
+}
+
+#wrap #header #gnb .m_search_bar .m_search_header::placeholder {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Chronicle Text G1 Roman';
+  color: #999999;
+}
+
+#wrap #main {
+  margin-top: 70px;
+}
+
+#wrap #main #main_menu .inner {
+  display: flex;
+  margin-bottom: 3.5%;
+}
+
+#wrap #main #main_menu .inner .banner_box {
+  display: flex;
+  align-items: flex-end;
+  width: 65%;
+}
+
+#wrap #main #main_menu .inner .banner_box .banner_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+#wrap #main #main_menu .inner .banner_box .banner_caption {
+  display: block;
+  font-size: 10px;
+  font-family: "Verlag-Book";
+  color: #999999;
+  writing-mode: vertical-lr;
+  margin-left: 15px;
+  padding-bottom: 5px;
+  transition: 0.5s;
+}
+
+#wrap #main #main_menu .inner .menu_box {
+  width: 35%;
+  color: #2b2b2b;
+  text-align: right;
+  padding: 45px 0;
+}
+
+#wrap #main #main_menu .inner .menu_box ul {
+  margin-bottom: 25px;
+}
+
+#wrap #main #main_menu .inner .menu_box ul h3 {
+  font-size: 10px;
+  font-weight: 200;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+#wrap #main #main_menu .inner .menu_box ul li {
+  margin-bottom: 15px;
+}
+
+#wrap #main #main_menu .inner .menu_box ul li a {
+  font-size: 26px;
+  color: #2b2b2b;
+  letter-spacing: 7px;
+  margin-right: -7px;
+}
+
+#wrap #main #content {
+  margin: 3.5% 0;
+}
+
+#wrap #main #content .item_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#wrap #main #content .item_wrap .item {
+  height: 100%;
+  margin-bottom: 25px;
+}
+
+#wrap #main #content .item_wrap .item a {
+  display: block;
+  width: 100%;
+}
+
+#wrap #main #content .item_wrap .item a img {
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+#wrap #main #content .item_wrap .item .hierarchy_wrap {
+  display: flex;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#wrap #main #content .item_wrap .item .hierarchy_wrap p.hierarchy {
+  position: relative;
+  font-size: 10px;
+  color: #999999;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 11px;
+}
+
+#wrap #main #content .item_wrap .item .hierarchy_wrap p.hierarchy:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 1px;
+  height: 100%;
+  background-color: #999999;
+}
+
+#wrap #main #content .item_wrap .item p.tit {
+  font-size: 14px;
+  color: #808080;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+#wrap #main #content .item_wrap .item p.desc {
+  font-size: 12px;
+  color: #404040;
+  line-height: 1.5;
+  font-family: "Chronicle Text G1 Roman";
+  margin-bottom: 18px;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+#wrap #main #content .item_wrap .item p.desc:hover {
+  opacity: 1;
+}
+
+#wrap #main #content .item_wrap .item.col10 {
+  width: 21.5%;
+}
+
+#wrap #main #content .item_wrap .item.col20 {
+  width: 47.666%;
+}
+
+#wrap #main #ad_bn {
+  margin-bottom: 3.5%;
+}
+
+#wrap #main #ad_bn .inner a {
+  display: block;
+}
+
+#wrap #main #ad_bn .inner a img {
+  display: block;
+  width: 100%;
+}
+
+#wrap #main #products {
+  background-color: #bdbebf;
+  padding: 60px 0;
+}
+
+#wrap #main #products .inner .sbuscription_wrap {
+  display: flex;
+  margin-bottom: 3.5%;
+}
+
+#wrap #main #products .inner .sbuscription_wrap .subscription_img {
+  width: 65%;
+}
+
+#wrap #main #products .inner .sbuscription_wrap .subscription_img img {
+  display: block;
+  width: 100%;
+}
+
+#wrap #main #products .inner .sbuscription_wrap .subscription_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 31.5%;
+  margin-left: 3.5%;
+  font-family: "Chronicle Text G1 Roman";
+  color: #404040;
+  text-align: center;
+}
+
+#wrap #main #products .inner .sbuscription_wrap .subscription_text h3 {
+  font-size: 36px;
+  margin-bottom: 36px;
+  letter-spacing: 4px;
+  cursor: default;
+}
+
+#wrap #main #products .inner .sbuscription_wrap .subscription_text p {
+  font-size: 13px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  cursor: default;
+}
+
+#wrap #main #products .inner .attachment h2 {
+  font-size: 11px;
+  margin: 10px 0;
+  color: #ffffff;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 2px;
+  font-weight: normal;
+  cursor: default;
+}
+
+#wrap #main #products .inner .attachment .item_box {
+  display: flex;
+  margin-bottom: 3.5%;
+}
+
+#wrap #main #products .inner .attachment .item_box .item {
+  flex-grow: 1;
+  width: 29.5%;
+  margin-right: 3.5%;
+}
+
+#wrap #main #products .inner .attachment .item_box .item:last-child {
+  margin-right: 0;
+}
+
+#wrap #main #products .inner .attachment .item_box .item img {
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#wrap #main #products .inner .attachment .item_box .item p.tit {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 2px;
+  margin-top: 15px;
+  cursor: default;
+}
+
+#wrap #main #products .inner .attachment .item_box .item p.desc {
+  color: #808080;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "Verlag-Book";
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+#wrap #main #products .inner .attachment .item_box .item p.price {
+  color: #808080;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: "Verlag-Book";
+  letter-spacing: 2px;
+  cursor: default;
+}
+
+#wrap #footer {
+  padding: 100px 0;
+  background-color: #4d4d4d;
+}
+
+#wrap #footer .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrap #footer .inner .cp_info {
+  width: 25%;
+  font-family: "Chronicle Text G1 Roman";
+}
+
+#wrap #footer .inner .cp_info p {
+  font-size: 12px;
+  color: #c7c8c9;
+}
+
+#wrap #footer .inner .cp_info .footer_logo {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 50px;
+  background-image: url("../img/logoWhite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 20px;
+}
+
+#wrap #footer .inner .cp_info .footer_logo:before {
+  content: 'ⓒ';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #f5f5f5;
+}
+
+#wrap #footer .inner .site_map {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+#wrap #footer .inner .site_map .category_title {
+  width: 150px;
+  font-size: 12px;
+  font-family: "Verlag-Book";
+  color: #c7c8c9;
+  letter-spacing: 3px;
+}
+
+#wrap #footer .inner .site_map .category_title .site_category {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#wrap #footer .inner .site_map .category_title .site_category .site_list {
+  width: 100%;
+}
+
+#wrap #footer .inner .site_map .category_title .site_category .site_list a {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.5;
+  transition: 0.5s;
+  letter-spacing: 0;
+}
+
+#wrap #footer .inner .site_map .category_title .site_category .site_list a:hover {
+  color: #c7c8c9;
+}
+
+#wrap #footer .inner .social_menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#wrap #footer .inner .social_menu h3 {
+  font-size: 12px;
+  font-family: "Verlag-Book";
+  font-weight: 400;
+  color: #c7c8c9;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+#wrap #footer .inner .social_menu form {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#wrap #footer .inner .social_menu form input {
+  display: block;
+  width: 170px;
+  height: 30px;
+  color: #ffffff;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #c7c8c9;
+  border-right: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+#wrap #footer .inner .social_menu form input::placeholder {
+  font-size: 13px;
+  font-family: 'Chronicle Text G1 Roman';
+  color: #c7c8c9;
+  letter-spacing: 3px;
+}
+
+#wrap #footer .inner .social_menu form button {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #c7c8c9;
+  background-image: url("../img/arrowRight.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+#wrap #footer .inner .social_menu ul.sns_item {
+  display: flex;
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li {
+  margin-right: 20px;
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  transition: 0.5s;
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a.instagram {
+  background-image: url("../img/instagram_gray.png");
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a.instagram:hover {
+  background-image: url("../img/instagram_white.png");
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a.twitter {
+  background-image: url("../img/twitter_gray.png");
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a.twitter:hover {
+  background-image: url("../img/twitter_white.png");
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a.facebook {
+  background-image: url("../img/facebook_gray.png");
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a.facebook:hover {
+  background-image: url("../img/facebook_white.png");
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a.pinterest {
+  background-image: url("../img/pinterest_gray.png");
+}
+
+#wrap #footer .inner .social_menu ul.sns_item li a.pinterest:hover {
+  background-image: url("../img/pinterest_white.png");
+}
+
+@media screen and (max-width: 1130px) {
+  #wrap #main #main_menu {
+    display: flex;
+  }
+  #wrap #main #main_menu .inner .banner_box {
+    flex-direction: column;
+    width: 100%;
+  }
+  #wrap #main #main_menu .inner .banner_box .banner_img {
+    display: block;
+    width: 100%;
+  }
+  #wrap #main #main_menu .inner .banner_box .banner_caption {
+    display: block;
+    font-size: 10px;
+    font-family: "Verlag-Book";
+    color: #999999;
+    writing-mode: horizontal-tb;
+    margin-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+  #wrap #main #main_menu .inner .menu_box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #wrap #main #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy {
+    font-size: 10px;
+    color: #999999;
+    font-family: "Verlag-Book";
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  #wrap #main #content .inner .item_wrap .item.col10 {
+    width: 47.666%;
+  }
+  #wrap #main #content .inner .item_wrap .item.col20 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #wrap #main #products .inner .sbuscription_wrap {
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+  #wrap #main #products .inner .sbuscription_wrap .subscription_img {
+    width: 100%;
+  }
+  #wrap #main #products .inner .sbuscription_wrap .subscription_img img {
+    width: 100%;
+  }
+  #wrap #main #products .inner .sbuscription_wrap .subscription_text {
+    margin-bottom: 30px;
+  }
+  #wrap #main #products .inner .sbuscription_wrap .subscription_text h3 {
+    font-size: 30px;
+    margin-bottom: 36px;
+    letter-spacing: 4px;
+    cursor: default;
+  }
+  #wrap #main #products .inner .sbuscription_wrap .subscription_text p {
+    font-size: 13px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    cursor: default;
+  }
+  #wrap #main #products .inner .attachment h2 {
+    font-size: 16px;
+  }
+  #wrap #main #products .inner .attachment .item_box {
+    flex-direction: column;
+  }
+  #wrap #main #products .inner .attachment .item_box .item {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 30px;
+  }
+  #wrap #main #products .inner .attachment .item_box .item:last-child {
+    margin-right: 0;
+  }
+  #wrap #footer .inner {
+    flex-direction: column;
+  }
+  #wrap #footer .inner .cp_info {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  #wrap #footer .inner .cp_info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  #wrap #footer .inner .site_map {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #wrap #footer .inner .social_menu {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #wrap #m_menu .inner .menu_list {
+    margin-bottom: 50px;
+  }
+  #wrap #m_menu .inner .m_footer {
+    flex-direction: column;
+  }
+  #wrap #m_menu .inner .m_footer .cp_info {
+    display: none;
+    margin-bottom: 30px;
+  }
+  #wrap #m_menu .inner .m_footer .site_map {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #wrap #m_menu .inner .m_footer .social_menu {
+    margin-bottom: 30px;
+  }
+  #wrap #main #content .inner .item_wrap .item.col10 {
+    width: 100%;
+  }
+  #wrap #main #content .inner .item_wrap .item.col20 {
+    width: 100%;
+  }
+  #wrap #main #ad_bn {
+    display: none;
+  }
+}
+
+#wrap #header #gnb .inner .page_title {
+  position: relative;
+}
+
+#wrap #header #gnb .inner .page_title .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-family: "Chronicle Text G1 Roman";
+  color: #404040;
+  transition: 1s;
+}
+
+#wrap #main.sub {
+  margin-top: 70px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .left_box {
+  width: 65.5%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .left_box .intor_img {
+  display: block;
+  width: 100%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 31%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .intro_text {
+  padding: 0 30px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .intro_text p {
+  font-size: 14px;
+  font-family: "Chronicle Text G1 Roman";
+  line-height: 1.5;
+  margin-bottom: 15px;
+  cursor: default;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .intro_text hr {
+  width: 20px;
+  display: inline-block;
+  margin: 15px 0;
+  background-color: #4d4d4d;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap {
+  display: flex;
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap .gbtn {
+  font-size: 14px;
+  padding: 10px 50px;
+  margin-right: 40px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 11px;
+  font-style: italic;
+  color: #2b2b2b;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap .login span {
+  font-size: 10px;
+  font-style: normal;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  text-align: center;
+  background-color: #e6e5e6;
+  padding: 10px 3px;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap .login:hover span {
+  color: #ffffff;
+  background-color: #404040;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1e1e1;
+  width: 65.5%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content {
+  display: flex;
+  align-items: center;
+  padding: 5% 0 5% 5%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content a {
+  display: block;
+  width: calc(100% - 50px);
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content a img {
+  display: block;
+  width: 100%;
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  transition: 0.5s;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content a img:hover {
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content {
+  padding: 5% 5% 5% 0;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content a.tit {
+  display: block;
+  font-size: 18px;
+  font-family: "Chronicle Text G1 Roman";
+  margin-bottom: 15px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content p.subtit {
+  display: block;
+  color: #404040;
+  font-size: 12px;
+  font-family: "Verlag-Book";
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content p.price {
+  display: block;
+  color: #404040;
+  font-size: 13px;
+  font-family: "Verlag-Book";
+  margin-bottom: 10px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content p.desc {
+  display: block;
+  color: #404040;
+  font-size: 14px;
+  font-family: "Chronicle Text G1 Roman";
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content a.viewmore {
+  display: inline-block;
+  font-size: 13px;
+  font-family: "Verlag-Book";
+  color: #2b2b2b;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e1e1e1;
+  transition: 0.5s;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content a.viewmore:hover {
+  border-bottom: 1px solid #2b2b2b;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .right_box h2 {
+  display: block;
+  font-size: 3.2vw;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .right_box h3 {
+  font-size: 16px;
+  font-family: "Chronicle Text G1 Roman";
+  text-align: center;
+}
+
+#wrap #main.sub #content {
+  margin: 3.5% 0;
+}
+
+#wrap #main.sub #content .item_tag {
+  font-size: 13px;
+  font-family: "Chronicle Text G1 Roman";
+  font-weight: 400;
+  color: #404040;
+  margin: 13px 0;
+}
+
+#wrap #main.sub #content .inner .item_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item {
+  height: 100%;
+  margin-bottom: 25px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item a {
+  display: block;
+  width: 100%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap {
+  display: flex;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy {
+  position: relative;
+  font-size: 10px;
+  color: #999999;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 11px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 1px;
+  height: 100%;
+  background-color: #999999;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.tit {
+  font-size: 14px;
+  color: #808080;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.desc {
+  font-size: 12px;
+  color: #404040;
+  line-height: 1.5;
+  font-family: "Chronicle Text G1 Roman";
+  margin-bottom: 18px;
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.desc:hover {
+  opacity: 1;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item a.tit {
+  font-size: 16px;
+  color: #999999;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item a.tit:hover {
+  color: #404040;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.subtit {
+  font-size: 10px;
+  color: #404040;
+  line-height: 1.5;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.price {
+  font-size: 10px;
+  color: #404040;
+  line-height: 1.5;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item.col10 {
+  width: 22.375%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item.col15 {
+  width: 31%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item.col20 {
+  width: 48.25%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item.col30 {
+  width: 65.5%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .vimeo {
+  position: relative;
+  padding: 50% 0 0 0;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .vimeo .thumbnail_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 30;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .vimeo .thumbnail_overlay .playbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/playVideo.png");
+  background-size: cover;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap {
+  display: flex;
+  padding: 20px 0 0 20px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left {
+  width: 60%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info {
+  font-family: "Chronicle Text G1 Roman";
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info .tit {
+  font-size: 16px;
+  color: #808080;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info .tit:hover {
+  color: #2b2b2b;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info .subtit {
+  font-size: 10px;
+  color: #2b2b2b;
+  letter-spacing: 1px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info .desc {
+  font-size: 12px;
+  color: #404040;
+  padding-right: 40px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_right {
+  width: 40%;
+  color: #404040;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_right .credits {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_right .credits .subject {
+  font-weight: bold;
+  font-family: "Verlag-Book";
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_right .credits .content {
+  font-family: "Chronicle Text G1 Roman";
+}
+
+@media screen and (max-width: 1130px) {
+  #wrap #main.sub #intro .inner .box_wrap {
+    flex-direction: column;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .left_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box .intro_text {
+    padding: 0;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap {
+    padding: 0;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .right_box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy {
+    font-size: 10px;
+    color: #999999;
+    font-family: "Verlag-Book";
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col10 {
+    width: 31%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col15 {
+    width: 31%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col20 {
+    width: 65.5%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col30 {
+    width: 65.5%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.odds-and-ends950 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.set15 {
+    width: 31%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.set20 {
+    width: 48.25%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.set30 {
+    width: 65.5%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.setfull {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #wrap #footer .inner {
+    flex-direction: column;
+  }
+  #wrap #footer .inner .cp_info {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  #wrap #footer .inner .cp_info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  #wrap #footer .inner .site_map {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #wrap #footer .inner .social_menu {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  #wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy {
+    font-size: 10px;
+    color: #999999;
+    font-family: "Verlag-Book";
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col10 {
+    width: 48.25%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col15 {
+    width: 48.25%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col20 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.setfull_787 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.odds-and-ends787 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #wrap #m_menu .inner .menu_list {
+    margin-bottom: 50px;
+  }
+  #wrap #m_menu .inner .m_footer {
+    flex-direction: column;
+  }
+  #wrap #m_menu .inner .m_footer .cp_info {
+    display: none;
+    margin-bottom: 30px;
+  }
+  #wrap #m_menu .inner .m_footer .site_map {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #wrap #m_menu .inner .m_footer .social_menu {
+    margin-bottom: 30px;
+  }
+  #wrap #main.sub #intro .inner .box_wrap {
+    flex-direction: column;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .left_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box .intro_text {
+    padding: 0;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap {
+    padding: 0;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box {
+    width: 100%;
+    flex-direction: column;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content {
+    justify-content: center;
+    padding-right: 5%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content a {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content {
+    padding-left: 5%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .right_box {
+    display: none;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col10 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col15 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col20 {
+    width: 100%;
+  }
+}

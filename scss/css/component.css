@@ -1,0 +1,591 @@
+#wrap #header #gnb .inner .page_title {
+  position: relative;
+}
+
+#wrap #header #gnb .inner .page_title .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-family: "Chronicle Text G1 Roman";
+  color: #404040;
+  transition: 1s;
+}
+
+#wrap #main.sub {
+  margin-top: 70px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .left_box {
+  width: 65.5%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .left_box .intor_img {
+  display: block;
+  width: 100%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 31%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .intro_text {
+  padding: 0 30px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .intro_text p {
+  font-size: 14px;
+  font-family: "Chronicle Text G1 Roman";
+  line-height: 1.5;
+  margin-bottom: 15px;
+  cursor: default;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .intro_text hr {
+  width: 20px;
+  display: inline-block;
+  margin: 15px 0;
+  background-color: #4d4d4d;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap {
+  display: flex;
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap .gbtn {
+  font-size: 14px;
+  padding: 10px 50px;
+  margin-right: 40px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 11px;
+  font-style: italic;
+  color: #2b2b2b;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap .login span {
+  font-size: 10px;
+  font-style: normal;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  text-align: center;
+  background-color: #e6e5e6;
+  padding: 10px 3px;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+#wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap .login:hover span {
+  color: #ffffff;
+  background-color: #404040;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e1e1e1;
+  width: 65.5%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content {
+  display: flex;
+  align-items: center;
+  padding: 5% 0 5% 5%;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content a {
+  display: block;
+  width: calc(100% - 50px);
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content a img {
+  display: block;
+  width: 100%;
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  transition: 0.5s;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content a img:hover {
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content {
+  padding: 5% 5% 5% 0;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content a.tit {
+  display: block;
+  font-size: 18px;
+  font-family: "Chronicle Text G1 Roman";
+  margin-bottom: 15px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content p.subtit {
+  display: block;
+  color: #404040;
+  font-size: 12px;
+  font-family: "Verlag-Book";
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content p.price {
+  display: block;
+  color: #404040;
+  font-size: 13px;
+  font-family: "Verlag-Book";
+  margin-bottom: 10px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content p.desc {
+  display: block;
+  color: #404040;
+  font-size: 14px;
+  font-family: "Chronicle Text G1 Roman";
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content a.viewmore {
+  display: inline-block;
+  font-size: 13px;
+  font-family: "Verlag-Book";
+  color: #2b2b2b;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e1e1e1;
+  transition: 0.5s;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content a.viewmore:hover {
+  border-bottom: 1px solid #2b2b2b;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .right_box h2 {
+  display: block;
+  font-size: 3.2vw;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#wrap #main.sub #intro .inner .box_wrap.shop .right_box h3 {
+  font-size: 16px;
+  font-family: "Chronicle Text G1 Roman";
+  text-align: center;
+}
+
+#wrap #main.sub #content {
+  margin: 3.5% 0;
+}
+
+#wrap #main.sub #content .item_tag {
+  font-size: 13px;
+  font-family: "Chronicle Text G1 Roman";
+  font-weight: 400;
+  color: #404040;
+  margin: 13px 0;
+}
+
+#wrap #main.sub #content .inner .item_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item {
+  height: 100%;
+  margin-bottom: 25px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item a {
+  display: block;
+  width: 100%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap {
+  display: flex;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy {
+  position: relative;
+  font-size: 10px;
+  color: #999999;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 11px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 1px;
+  height: 100%;
+  background-color: #999999;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.tit {
+  font-size: 14px;
+  color: #808080;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.desc {
+  font-size: 12px;
+  color: #404040;
+  line-height: 1.5;
+  font-family: "Chronicle Text G1 Roman";
+  margin-bottom: 18px;
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.desc:hover {
+  opacity: 1;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item a.tit {
+  font-size: 16px;
+  color: #999999;
+  font-family: "Chronicle Text G1 Roman";
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item a.tit:hover {
+  color: #404040;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.subtit {
+  font-size: 10px;
+  color: #404040;
+  line-height: 1.5;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item p.price {
+  font-size: 10px;
+  color: #404040;
+  line-height: 1.5;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+  opacity: 0.7;
+  cursor: default;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item.col10 {
+  width: 22.375%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item.col15 {
+  width: 31%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item.col20 {
+  width: 48.25%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item.col30 {
+  width: 65.5%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .vimeo {
+  position: relative;
+  padding: 50% 0 0 0;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .vimeo .thumbnail_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 30;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .vimeo .thumbnail_overlay .playbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/playVideo.png");
+  background-size: cover;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap {
+  display: flex;
+  padding: 20px 0 0 20px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left {
+  width: 60%;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info {
+  font-family: "Chronicle Text G1 Roman";
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info .tit {
+  font-size: 16px;
+  color: #808080;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info .tit:hover {
+  color: #2b2b2b;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info .subtit {
+  font-size: 10px;
+  color: #2b2b2b;
+  letter-spacing: 1px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_left .video_info .desc {
+  font-size: 12px;
+  color: #404040;
+  padding-right: 40px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_right {
+  width: 40%;
+  color: #404040;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_right .credits {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_right .credits .subject {
+  font-weight: bold;
+  font-family: "Verlag-Book";
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#wrap #main.sub #content .inner .item_wrap .item .video_text_wrap .video_text_right .credits .content {
+  font-family: "Chronicle Text G1 Roman";
+}
+
+@media screen and (max-width: 1130px) {
+  #wrap #main.sub #intro .inner .box_wrap {
+    flex-direction: column;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .left_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box .intro_text {
+    padding: 0;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap {
+    padding: 0;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .right_box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy {
+    font-size: 10px;
+    color: #999999;
+    font-family: "Verlag-Book";
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col10 {
+    width: 31%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col15 {
+    width: 31%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col20 {
+    width: 65.5%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col30 {
+    width: 65.5%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.odds-and-ends950 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.set15 {
+    width: 31%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.set20 {
+    width: 48.25%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.set30 {
+    width: 65.5%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.setfull {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #wrap #footer .inner {
+    flex-direction: column;
+  }
+  #wrap #footer .inner .cp_info {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  #wrap #footer .inner .cp_info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  #wrap #footer .inner .site_map {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #wrap #footer .inner .social_menu {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  #wrap #main.sub #content .inner .item_wrap .item .hierarchy_wrap p.hierarchy {
+    font-size: 10px;
+    color: #999999;
+    font-family: "Verlag-Book";
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col10 {
+    width: 48.25%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col15 {
+    width: 48.25%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col20 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.setfull_787 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.odds-and-ends787 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #wrap #m_menu .inner .menu_list {
+    margin-bottom: 50px;
+  }
+  #wrap #m_menu .inner .m_footer {
+    flex-direction: column;
+  }
+  #wrap #m_menu .inner .m_footer .cp_info {
+    display: none;
+    margin-bottom: 30px;
+  }
+  #wrap #m_menu .inner .m_footer .site_map {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #wrap #m_menu .inner .m_footer .social_menu {
+    margin-bottom: 30px;
+  }
+  #wrap #main.sub #intro .inner .box_wrap {
+    flex-direction: column;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .left_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box .intro_text {
+    padding: 0;
+  }
+  #wrap #main.sub #intro .inner .box_wrap .right_box .btn_wrap {
+    padding: 0;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box {
+    width: 100%;
+    flex-direction: column;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content {
+    justify-content: center;
+    padding-right: 5%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box .left_content a {
+    width: 100%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .left_box .right_content {
+    padding-left: 5%;
+  }
+  #wrap #main.sub #intro .inner .box_wrap.shop .right_box {
+    display: none;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col10 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col15 {
+    width: 100%;
+  }
+  #wrap #main.sub #content .inner .item_wrap .item.col20 {
+    width: 100%;
+  }
+}

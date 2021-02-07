@@ -1,0 +1,911 @@
+body{ background-color: #f4f4f4;}
+a{ font-family: "Chronicle Text G1 Roman"; }
+
+.inner{
+  width: 92.5%;
+  margin: 0 auto;
+}
+
+.gbtn{
+  display: flex;
+  align-items: center;
+  border:1px solid #404040;
+  padding: 12px 24px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #404040;
+  font-family: "Verlag-Book";
+  font-weight: bold;
+  transition: 0.5s;
+  &:hover{
+    color: #ffffff;
+    background-color: #404040;
+  }
+}
+
+#wrap{
+  position: relative;
+  #m_menu{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: #858687;
+    z-index: 1000;
+    .inner{
+      width: 92.5%;
+      margin: 0 auto;
+      .m_close_btn{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 70px;
+        img{
+          width: 15px;
+          height: 15px;
+          margin: 15px;
+          cursor: pointer;
+        }
+      }
+      .menu_list{
+        margin-bottom: 100px;
+        .list_item{
+          a{
+            font-size: 30px;
+            color: #f5f5f5;
+            letter-spacing: 3px;
+            line-height: 1.9;
+            padding-bottom: 5px;
+            transition: 0.5s;
+            border-bottom: 1px solid #858687;
+            &:hover{
+              color: #c7c8c9;
+              border-bottom: 1px solid #c7c8c9;
+            }
+          }
+        }
+      }
+      .m_footer{
+        display: flex;
+        justify-content: space-between;
+        .cp_info{
+          width: 25%;
+          font-family: "Chronicle Text G1 Roman";
+          p{
+            font-size: 12px;
+            color: #c7c8c9;
+          }
+          .m_footer_logo{
+            display: block;
+            position: relative;
+            width: 80px;
+            height: 50px;
+            background-image: url('../img/logoWhite.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-left: 20px;
+            &:before{
+              content: 'ⓒ';
+              position: absolute;
+              top:50%;
+              left:-20px;
+              transform: translateY(-50%);
+              font-size: 16px;
+              color: #f5f5f5;
+            }
+          }
+        }
+        .site_map{
+          display: flex;
+          justify-content: center;
+          width: 50%;
+          .category_title{
+            width: 150px;
+            font-size: 12px;
+            font-family: "Verlag-Book";
+            color: #c7c8c9;
+            letter-spacing: 3px;
+            .site_category{
+              width: 100%;
+              margin-top: 20px;
+              .site_list{
+                width: 100%;
+                a{
+                  font-size: 14px;
+                  color: #ffffff;
+                  line-height: 1.5;
+                  transition: 0.5s;
+                  letter-spacing: 0;
+                  &:hover{
+                    color: #c7c8c9;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .social_menu{
+          display: flex;
+          flex-direction: column;
+          h3{
+            font-size: 12px;
+            font-family: "Verlag-Book";
+            font-weight: 400;
+            color: #c7c8c9;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+          }
+          form{
+            display: flex;
+            margin-bottom: 30px;
+            input{
+              display: block;
+              width: 170px;
+              height: 30px;
+              color: #ffffff;
+              outline: none;
+              background-color: transparent;
+              border: 1px solid #c7c8c9;
+              border-right: 0;
+              box-sizing: border-box;
+              border-radius: 0;
+              padding: 0 10px;
+              // float: right;
+              &::placeholder{
+                font-size: 13px;
+                font-family: 'Chronicle Text G1 Roman';
+                color:#c7c8c9;
+                letter-spacing: 3px;
+              }
+            }
+            button{
+              width: 30px;
+              height: 30px;
+              outline: none;
+              background-color: transparent;
+              border: 1px solid #c7c8c9;
+              background-image: url('../img/arrowRight.svg');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 15px;
+            }
+          }
+          ul.sns_item{
+            display: flex;
+            li{
+              margin-right: 20px;
+              a{
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 18px;
+                height: 18px;
+                transition: 0.5s;
+                &.instagram{
+                  background-image: url('../img/instagram_gray.png');
+                  &:hover{
+                    background-image: url('../img/instagram_white.png');
+                  }
+                }
+                &.twitter{
+                  background-image: url('../img/twitter_gray.png');
+                  &:hover{
+                    background-image: url('../img/twitter_white.png');
+                  }
+                }
+                &.facebook{
+                  background-image: url('../img/facebook_gray.png');
+                  &:hover{
+                    background-image: url('../img/facebook_white.png');
+                  }
+                }
+                &.pinterest{
+                  background-image: url('../img/pinterest_gray.png');
+                  &:hover{
+                    background-image: url('../img/pinterest_white.png');
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 70px;
+    background-color: #f4f4f4;
+    z-index: 50;
+    #gnb{
+      position: relative;
+      width: 100%;
+      .inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .top_logo{
+          width: 114px;
+          display: flex;
+          align-items: center;
+          a{
+            display: block;
+            width: 100%;
+            img{
+              display: block;
+              width: 100%;
+              height: 50px;
+            }
+          }
+        }
+        .page_title{
+          width: 42%;
+          display: flex;
+          justify-content: center;
+          .search_header{
+            display: none;
+            width: 100%;
+            font-size: 14px;
+            outline: none;
+            background-color: #f4f4f4;
+            border: none;
+            padding: 5px 0;
+            border-bottom: 1px solid gray;
+            &::placeholder{
+              font-size: 13px;
+              font-weight: bold;
+              font-style: italic;
+              font-family: 'Chronicle Text G1 Roman';
+              color:#999999;
+            }
+          }
+        }
+        .gnb_menu{
+          width: 114px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          li{
+            display: flex;
+            align-items: center;
+            width: 18px;
+            height: 18px;
+            margin: 15px 0 15px 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            cursor: pointer;
+            img{
+              display: block;
+              width: 100%;
+            }
+            &.account{
+              background-image: url('../img/user.png');
+              margin-left: 0;
+            }
+            &.search{
+              transition: 0.5s;
+              background-image: url('../img/search.png');
+              &.active{
+                background-image: url('../img/cancel.png');
+              }
+            }
+            &.menu_btn{
+              background-image: url('../img/menu.png');
+            }
+          }
+        }
+      }
+      .m_search_bar{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        top:60px;
+        width: 100%;
+        height: 40px;
+        background-color: #f4f4f4;
+        transition: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+        .m_search_header{
+          display: block;
+          width: 60%;
+          height: 50%;
+          font-size: 14px;
+          outline: none;
+          background-color: #f4f4f4;
+          border: none;
+          border-radius: 0;
+          padding: 5px 0;
+          border-bottom: 1px solid gray;
+          &::placeholder{
+            font-size: 13px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Chronicle Text G1 Roman';
+            color:#999999;
+          }
+        }
+
+      }
+    }
+  }
+  #main{
+    margin-top: 70px;
+    #main_menu{
+      .inner{
+        display: flex;
+        margin-bottom: 3.5%;
+        .banner_box{
+          display: flex;
+          align-items: flex-end;
+          width: 65%;
+          .banner_img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+          }
+          .banner_caption{
+            display: block;
+            font-size: 10px;
+            font-family: "Verlag-Book";
+            color:#999999;
+            writing-mode:vertical-lr;
+            margin-left:15px;
+            padding-bottom: 5px;
+            transition: 0.5s;
+          }
+        }
+        .menu_box{
+          width: 35%;
+          color:#2b2b2b;
+          text-align: right;
+          padding: 45px 0;
+          ul{
+            margin-bottom: 25px;
+            h3{
+              font-size: 10px;
+              font-weight: 200;
+              font-family: "Chronicle Text G1 Roman";
+              letter-spacing: 3px;
+              margin-right: -3px;
+              margin-bottom: 10px;
+              cursor: default;
+            }
+            li{
+              margin-bottom: 15px;
+
+              a{
+                font-size: 26px;
+                color:#2b2b2b;
+                letter-spacing: 7px;
+                margin-right: -7px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #content{
+      margin: 3.5% 0;
+      .item_wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        .item{
+          height: 100%;
+          margin-bottom: 25px;
+          a{
+            display: block;
+            width: 100%;
+            img{
+              display: block;
+              width: 100%;
+              transition: 0.5s;
+              margin-bottom: 10px;
+            }
+          }
+          .hierarchy_wrap{
+            display: flex;
+            margin-bottom: 10px;
+            overflow: hidden;
+            p.hierarchy{
+              position: relative;
+              font-size: 10px;
+              color: #999999;
+              font-family: "Verlag-Book";
+              font-weight: bold;
+              letter-spacing: 1px;
+              margin-right: 11px;
+              &:before{
+                content:'';
+                position: absolute;
+                top:0;
+                left:-6px;
+                width: 1px;
+                height: 100%;
+                background-color: #999999;
+              }
+            }
+          }
+          p.tit{
+            font-size: 14px;
+            color: #808080;
+            font-family: "Chronicle Text G1 Roman";
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+          }
+          p.desc{
+            font-size: 12px;
+            color: #404040;
+            line-height: 1.5;
+            font-family: "Chronicle Text G1 Roman";
+            margin-bottom: 18px;
+            transition: 0.3s;
+            opacity: 0.7;
+            &:hover{
+              opacity: 1;
+            }
+          }
+          &.col10{
+            width: 21.5%;
+          }
+          &.col20{
+            width: 47.666%;
+          }
+        }
+      }
+    }
+    #ad_bn{
+      margin-bottom: 3.5%;
+      .inner{
+        a{
+          display: block;
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    #products{
+      background-color: #bdbebf;
+      padding: 60px 0;
+      .inner{
+        .sbuscription_wrap{
+          display: flex;
+          margin-bottom: 3.5%;
+          .subscription_img{
+            width: 65%;
+            img{
+              display: block;
+              width: 100%;
+            }
+          }
+          .subscription_text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 31.5%;
+            margin-left: 3.5%;
+            font-family: "Chronicle Text G1 Roman";
+            color: #404040;
+            text-align: center;
+           h3{
+             font-size: 36px;
+             margin-bottom: 36px;
+             letter-spacing: 4px;
+             cursor: default;
+           }
+           p{
+             font-size: 13px;
+             margin-bottom: 40px;
+             letter-spacing: 2px;
+             cursor: default;
+           }
+          }
+        }
+        .attachment{
+          h2{
+            font-size: 11px;
+            margin: 10px 0;
+            color: #ffffff;
+            font-family: "Chronicle Text G1 Roman";
+            letter-spacing: 2px;
+            font-weight: normal;
+            cursor: default;
+          }
+          .item_box{
+            display: flex;
+            margin-bottom: 3.5%;
+            .item{
+              flex-grow: 1;
+              width: 29.5%;
+              margin-right: 3.5%;
+              &:last-child{
+                margin-right: 0;
+              }
+              img{
+                display: block;
+                width: 100%;
+                transition: 0.5s;
+                cursor: pointer;
+
+              }
+              p.tit{
+                color: #ffffff;
+                font-size: 14px;
+                font-family: "Chronicle Text G1 Roman";
+                letter-spacing: 2px;
+                margin-top: 15px;
+                cursor: default;
+              }
+              p.desc{
+                color: #808080;
+                font-size: 10px;
+                font-weight: bold;
+                font-family: "Verlag-Book";
+                letter-spacing: 2px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                cursor: default;
+              }
+              p.price{
+                color: #808080;
+                font-size: 11px;
+                font-weight: bold;
+                font-family: "Verlag-Book";
+                letter-spacing: 2px;
+                cursor: default;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #footer{
+    padding: 100px 0;
+    background-color: #4d4d4d;
+    .inner{
+      display: flex;
+      justify-content: space-between;
+      .cp_info{
+        width: 25%;
+        font-family: "Chronicle Text G1 Roman";
+        p{
+          font-size: 12px;
+          color: #c7c8c9;
+        }
+        .footer_logo{
+          display: block;
+          position: relative;
+          width: 80px;
+          height: 50px;
+          background-image: url('../img/logoWhite.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          margin-left: 20px;
+          &:before{
+            content: 'ⓒ';
+            position: absolute;
+            top:50%;
+            left:-20px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #f5f5f5;
+          }
+        }
+      }
+      .site_map{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        .category_title{
+          width: 150px;
+          font-size: 12px;
+          font-family: "Verlag-Book";
+          color: #c7c8c9;
+          letter-spacing: 3px;
+          .site_category{
+            width: 100%;
+            margin-top: 20px;
+            .site_list{
+              width: 100%;
+              a{
+                font-size: 14px;
+                color: #ffffff;
+                line-height: 1.5;
+                transition: 0.5s;
+                letter-spacing: 0;
+                &:hover{
+                  color: #c7c8c9;
+                }
+              }
+            }
+          }
+        }
+      }
+      .social_menu{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        h3{
+          font-size: 12px;
+          font-family: "Verlag-Book";
+          font-weight: 400;
+          color: #c7c8c9;
+          letter-spacing: 3px;
+          margin-bottom: 25px;
+        }
+        form{
+          display: flex;
+          margin-bottom: 30px;
+          input{
+            display: block;
+            width: 170px;
+            height: 30px;
+            color: #ffffff;
+            outline: none;
+            background-color: transparent;
+            border: 1px solid #c7c8c9;
+            border-right: 0;
+            border-radius: 0;
+            box-sizing: border-box;
+            padding: 0 10px;
+            &::placeholder{
+              font-size: 13px;
+              font-family: 'Chronicle Text G1 Roman';
+              color:#c7c8c9;
+              letter-spacing: 3px;
+            }
+          }
+          button{
+            width: 30px;
+            height: 30px;
+            outline: none;
+            background-color: transparent;
+            border: 1px solid #c7c8c9;
+            background-image: url('../img/arrowRight.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 15px;
+          }
+        }
+        ul.sns_item{
+          display: flex;
+          li{
+            margin-right: 20px;
+            a{
+              display: block;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 18px;
+              height: 18px;
+              transition: 0.5s;
+              &.instagram{
+                background-image: url('../img/instagram_gray.png');
+                &:hover{
+                  background-image: url('../img/instagram_white.png');
+                }
+              }
+              &.twitter{
+                background-image: url('../img/twitter_gray.png');
+                &:hover{
+                  background-image: url('../img/twitter_white.png');
+                }
+              }
+              &.facebook{
+                background-image: url('../img/facebook_gray.png');
+                &:hover{
+                  background-image: url('../img/facebook_white.png');
+                }
+              }
+              &.pinterest{
+                background-image: url('../img/pinterest_gray.png');
+                &:hover{
+                  background-image: url('../img/pinterest_white.png');
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1130px){
+  #wrap{
+    #main{
+      #main_menu{
+        display: flex;
+        .inner{
+          .banner_box{
+            flex-direction: column;
+            width: 100%;
+            .banner_img{
+              display: block;
+              width: 100%;
+            }
+            .banner_caption{
+              display: block;
+              font-size: 10px;
+              font-family: "Verlag-Book";
+              color:#999999;
+              writing-mode: horizontal-tb;
+              margin-left:15px;
+              padding-bottom: 5px;
+              padding-top: 10px;
+            }
+          }
+          .menu_box{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px){
+  #wrap{
+    #main{
+      #content{
+        .inner{
+          .item_wrap{
+            .item{
+              .hierarchy_wrap{
+                p.hierarchy{
+                  font-size: 10px;
+                  color: #999999;
+                  font-family: "Verlag-Book";
+                  font-weight: bold;
+                  letter-spacing: 1px;
+                }
+              }
+              &.col10{
+                width: 47.666%;
+              }
+              &.col20{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  #wrap{
+    #main{
+      #products{
+        .inner{
+          .sbuscription_wrap{
+            flex-direction: column-reverse;
+            margin-bottom: 30px;
+            .subscription_img{
+              width: 100%;
+              img{
+                width: 100%;
+              }
+            }
+            .subscription_text{
+              margin-bottom: 30px;
+             h3{
+               font-size: 30px;
+               margin-bottom: 36px;
+               letter-spacing: 4px;
+               cursor: default;
+             }
+             p{
+               font-size: 13px;
+               margin-bottom: 40px;
+               letter-spacing: 2px;
+               cursor: default;
+             }
+            }
+          }
+          .attachment{
+            h2{
+              font-size: 16px;
+            }
+            .item_box{
+              flex-direction: column;
+              .item{
+                width: 100%;
+                margin-right: 0%;
+                margin-bottom: 30px;
+                &:last-child{
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #footer{
+      .inner{
+        flex-direction: column;
+        .cp_info{
+          width: 90%;
+          margin-bottom: 30px;
+          p{
+            font-size: 14px;
+            line-height: 1.5;
+          }
+        }
+        .site_map{
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        .social_menu{
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  #wrap{
+    #m_menu{
+      .inner{
+        .menu_list{
+          margin-bottom: 50px;
+        }
+        .m_footer{
+          flex-direction: column;
+          .cp_info{
+            display: none;
+            margin-bottom: 30px;
+          }
+          .site_map{
+            width: 100%;
+            margin-bottom: 30px;
+          }
+          .social_menu{
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    #main{
+      #content{
+        .inner{
+          .item_wrap{
+            .item{
+              &.col10{
+                width: 100%;
+              }
+              &.col20{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      #ad_bn{
+        display: none;
+      }
+    }
+  }
+}

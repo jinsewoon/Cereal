@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Chronicle Text G1 Roman";
+      src: url("../font/Chronicle Text G1 Roman.otf");
+}
+@font-face {
+  font-family: "Verlag-Book";
+      src: url("../font/Verlag-Book.otf");
+}
+@import "import/initial.scss";
+@import "import/layout.scss";
+@import "import/component.scss";
